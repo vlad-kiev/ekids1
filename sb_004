@@ -1,0 +1,7 @@
+vladimirPlay = int(input("Сколько минут играл Владимир?"))
+
+chasov = vladimirPlay/60
+
+print("Владимир играл " + str(chasov) + " часов")
+
+
