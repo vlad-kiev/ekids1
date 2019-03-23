@@ -62,7 +62,7 @@ color('yellow')
 # shape("turtle")
 hideturtle()
 
-speed(20000000000000000000000000000)
+speed(200000000000000000000000000000000000000000)
 draw_matrix(matrix)
 draw_matrix(matrix1)
 draw_matrix(matrix2)
