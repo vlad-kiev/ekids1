@@ -2,7 +2,7 @@ print("DEBUG: Module 'gui.py' is executing")
 
 import logging
 
-#from matrix_tkinter_quest1.core import loggerConfigure
+#from Lesson3_2D_Array_Game.core import loggerConfigure
 
 import tkinter as tk
 from tkinter import ttk
@@ -28,26 +28,26 @@ class Gui:
     questMap = [
         # Row 0
         [
-            {'current': 'H', 'next': {'row': 2, 'col': 1}},   # Col 0-0
+            {'current': 'S', 'next': {'row': 2, 'col': 1}},   # Col 0-0
             {'current': 'A', 'next': {'row': 1, 'col': 4}},   # Col 1-3
             {'current': 'E', 'next': {'row': -1, 'col': -1}}, # Col 2-2
-            {'current': 'Y', 'next': {'row': -1, 'col': -1}},   # Col 3-0
-            {'current': 'L', 'next': {'row': 1, 'col': 0}}    # Col 4-1
+            {'current': 'E', 'next': {'row': 3, 'col': 0}},   # Col 3-0
+            {'current': 'A', 'next': {'row': 1, 'col': 0}}    # Col 4-1
         ],
 
         # Row 1
         [
-            {'current': 'L', 'next': {'row': 4, 'col': 0}},   # Col 0-1
+            {'current': 'U', 'next': {'row': 4, 'col': 0}},   # Col 0-1
             {'current': 'I', 'next': {'row': 3, 'col': 3}},   # Col 1-2
-            {'current': 'P', 'next': {'row': 1, 'col': 3}},   # Col 2-0
-            {'current': 'P', 'next': {'row': 0, 'col': 3}},   # Col 3-0
+            {'current': 'C', 'next': {'row': 1, 'col': 3}},   # Col 2-0
+            {'current': 'C', 'next': {'row': 0, 'col': 3}},   # Col 3-0
             {'current': 'N', 'next': {'row': 4, 'col': 2}}    # Col 4-3
         ],
 
         # Row 2
         [
             {'current': 'N', 'next': {'row': 1, 'col': 1}},   # Col 0-2
-            {'current': 'A', 'next': {'row': 1, 'col': 2}},   # Col 1-0
+            {'current': 'U', 'next': {'row': 1, 'col': 2}},   # Col 1-0
             {'current': 'U', 'next': {'row': 0, 'col': 2}},   # Col 2-2
             {'current': 'E', 'next': {'row': 0, 'col': 4}},   # Col 3-1
             {'current': 'U', 'next': {'row': 2, 'col': 0}}    # Col 4-2
@@ -64,10 +64,10 @@ class Gui:
 
         # Row 4
         [
-            {'current': 'O', 'next': {'row': -1, 'col': -1}},   # Col 0-1
+            {'current': 'T', 'next': {'row': 4, 'col': 1}},   # Col 0-1
             {'current': 'Y', 'next': {'row': -1, 'col': -1}}, # Col 1-1
             {'current': 'C', 'next': {'row': 3, 'col': 4}},   # Col 2-3
-            {'current': 'H', 'next': {'row': 2, 'col': 3}},   # Col 3-1
+            {'current': 'B', 'next': {'row': 2, 'col': 3}},   # Col 3-1
             {'current': 'C', 'next': {'row': 3, 'col': 1}}    # Col 4-3
         ]
     ]
