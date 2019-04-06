@@ -3,7 +3,6 @@
 """
 Виправіть логічні помилки у методі draw_matrix у формулах розрахунку координат
 """
-
 import turtle as t
 
 def draw_shape(sides, length):
@@ -47,15 +46,14 @@ def draw_matrix(matrix):
                 t.color("yellow")
                 t.fillcolor("yellow")
 
-            curX = startX + shapeSide * row + row * 2
-            curY = startY + shapeSide * col + col * 2
+            curY = startX + shapeSide * row + row * 2
+            curX = startY + shapeSide * col + col * 2
 
             t.penup()
             t.goto(curX, curY)
             t.pendown()
 
             draw_shape(4, shapeSide)
-
 
 matrixSmile = \
     [

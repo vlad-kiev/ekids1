@@ -14,23 +14,31 @@ import turtle as t
 #t.goto(curX, curY)
 #t.fillcolor('red')
 
-def draw_square():
-    t.forward(20)
-    t.left(90)
-    t.forward(50)
-    t.left(80)
+def draw_square(color):
+    t.color(color)
     t.forward(50)
     t.left(90)
-    t.color('black', 'red')
+    t.forward(50)
+    t.left(90)
+    t.forward(50)
+    t.left(90)
     t.forward(50)
     t.left(90)
 
+draw_square("black")
 
-t.color('yellow')
-draw_square()
-draw_square()
+t.left(45)
+t.forward(80)
+
+draw_square("green")
+
+t.left(180)
+t.forward(100)
+
+draw_square("red")
 
 t.shape("turtle")
+
 #t.hideturtle()
 
 t.speed(30)

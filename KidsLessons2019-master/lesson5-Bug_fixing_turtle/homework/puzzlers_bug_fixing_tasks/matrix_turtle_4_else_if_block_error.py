@@ -37,9 +37,9 @@ def draw_matrix(matrix):
             elif cell == 3:
                 t.color("blue")
                 t.fillcolor("blue")
-
-            t.color("yellow")
-            t.fillcolor("yellow")
+            else:
+                t.color("yellow")
+                t.fillcolor("yellow")
 
             curX = startX + shapeSide * col + col * 2
             curY = startY - shapeSide * row - row * 2
