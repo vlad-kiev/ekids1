@@ -19,7 +19,7 @@ def draw_matrix(matrix):
     t.speed(100)
 
     startX = -200
-    startY = -200
+    startY = 200
 
     shapeSide = 50
 
@@ -46,8 +46,8 @@ def draw_matrix(matrix):
                 t.color("yellow")
                 t.fillcolor("yellow")
 
-            curY = startX + shapeSide * row + row * 2
-            curX = startY + shapeSide * col + col * 2
+            curY = startY - shapeSide * row - row * 2
+            curX = startX + shapeSide * col + col * 2
 
             t.penup()
             t.goto(curX, curY)
