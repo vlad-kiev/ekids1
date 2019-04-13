@@ -18,14 +18,19 @@ a = abs(t.pos())
 t.speed(400)
 t.color('red', 'yellow')
 t.begin_fill()
-while True:
+i = 0
+while i < 12:
+    i = i + 1
+    t.pendown()
     t.forward(150)
     t.left(150)
     if abs(t.pos()) < 1:
         break
 t.end_fill()
+t.penup()
 
-def draw_square(color):
+def draw_square(color,x = 0,y = 0):
+    t.goto(x, y)
     t.begin_fill()
     t.pendown()
     t.color(color, 'red')
@@ -33,34 +38,37 @@ def draw_square(color):
     t.left(90)
     t.forward(70)
     t.left(90)
-    t.forward(70)
+    t.forward(size)
     t.left(90)
-    t.forward(70)
+    t.forward(size)
     t.left(90)
     t.fillcolor(color)
     t.penup()
     t.end_fill()
 
-startX = -200
-startY = 150
 
+def draw_flower(x, y,  size=60):
+    draw_square('purple', x - size, y-size)
+    draw_square('orange', x - size, y+size)
+    draw_square('pink', x + size, y+size)
+    draw_square('blue', x + size, y-size)
+    draw_square('yellow', x, y)
 
-t.goto(60,60)
-draw_square('purple')
-t.goto(-60,-60)
-draw_square('orange')
-t.goto(-60,60)
-draw_square('pink')
-t.goto(60,-60)
-draw_square('blue')
-t.goto(0,0)
+draw_flower(0,-200,50)
+
+draw_flower(150,-20,101)
+
+draw_flower(-200,100,201)
+
+draw_flower(100,100,20)
+
 t.color('blue')
-draw_square('yellow')
 t.shape("turtle")
 t.hideturtle()
 
 startX = -100
 startY = 200
+
 
 
 t.exitonclick()
